@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/favion.png" type="image/x-icon">
+    <title>Pop Bags</title>
+</head>
+
+<body>
+    <header>
+        <div class="text-center container-fluid" id="info">
+            <span>Frete grátis para todo o Brasil | Com 8% off à vista | 3x sem juros no PIX</span>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <h2 class="navbar-brand ms-4 my-auto" href="#"> POP BAGS
+                </h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul id="itensCenter-nav" class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#produtos">Populares</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Coleções</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Antifurto</a></li>
+                                <li><a class="dropdown-item" href="#">Casual</a></li>
+                                <li><a class="dropdown-item" href="#">Kawaii</a></li>
+                                <li><a class="dropdown-item" href="#">Kpopper</a></li>
+                                <li><a class="dropdown-item" href="#">Otaku</a></li>
+                                <li><a class="dropdown-item" href="#">Vintage</a></li>
+                                <li><a class="dropdown-item" href="#">Outros</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Categorias</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Femininas</a></li>
+                                <li><a class="dropdown-item" href="#">Masculinas</a></li>
+                                <li><a class="dropdown-item" href="#">Unissex</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                    <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #2b192e;"></i></button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+            <div class="carousel-item active">
+                <img src="img/banners/banner1.png" class="d-block w-100" alt="banner: frete grátis">
+            </div>
+            <div class="carousel-item">
+                <img src="img/banners/banner2.png" class="d-block w-100" alt="banner: mochila anti-furto">
+            </div>
+            <div class="carousel-item">
+                <img src="img/banners/banner3.png" class="d-block w-100" alt="banner: mochila kawaii">
+            </div>
+            <div class="carousel-item">
+                <img src="img/banners/banner4.png" class="d-block w-100" alt="banner: mochila casual">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <main>
+        <section id="produtos" class="m-4">
+            <div id="title-maisVendidos" class="d-flex justify-content-center p-2 mt-5">
+                <h3 class="fs-1" style="color: #2b192e;">Mais Vendidas</h3>
+            </div>
+            <div class="row row-cols-2 row-cols-md-4 g-4 mt-2 text-center">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/produtos/mochila-kawaii.png" class="card-img-top" alt="mochila preta com adesivos e dois chaveiros de ursinho">
+                        <div class="card-body">
+                            <h5 class="card-title">Mochila Kawaii</h5>
+                            <p>
+                              <span class="valor">R$171,00</span><strong>R$142,00</strong><br>
+                              <span class="card-text-parcela">6 x de R$23,66</span>
+                            </p>
+                            <button type="button" class="btn btn-sm btn-success">Comprar</button>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/produtos/mochila-antiFurto.png" class="card-img-top" alt="mochila azul com bordado, antifurto">
+                        <div class="card-body">
+                            <h5 class="card-title">Mochila Antifurto</h5>
+                            <p>
+                              <span class="valor">R$178,00</span><strong>R$129,00</strong><br>
+                              <span class="card-text-parcela">6 x de R$21,50</span>
+                            </p>
+                            <button type="button" class="btn btn-sm btn-success">Comprar</button>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/produtos/mochila-kpopper.png" alt="mochila preto e rosa com conector USB">
+                        <div class="card-body">
+                            <h5 class="card-title">Mochila Kpopper</h5>
+                            <p>
+                              <span class="valor">R$232,88</span><strong>R$186,00</strong><br>
+                              <span class="card-text-parcela">6 x de R$31,00</span>
+                            </p>
+                            <button type="button" class="btn btn-sm btn-success">Comprar</button>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/produtos/mochila-casual.png" class="card-img-top" alt="mochila vermelha com várias divisórias">
+                        <div class="card-body">
+                            <h5 class="card-title">Mochila Casual</h5>
+                            <p>
+                              <span class="valor">R$190,80</span><strong>R$156,00</strong><br>
+                              <span class="card-text-parcela">6 x de R$26,00</span>
+                            </p>
+                            <button type="button" class="btn btn-success btn-sm">Comprar</button>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/produtos/mochila-vintage.png" class="card-img-top" alt="mochila marrom estilo vintage">
+                        <div class="card-body">
+                            <h5 class="card-title">Mochila Vintage</h5>
+                            <p>
+                              <span class="valor">R$107,90</span><strong>R$87,90</strong><br>
+                              <span class="card-text-parcela">6 x de R$14,65</span>
+                            </p>
+                            <button type="button" class="btn btn-sm btn-success">Comprar</button>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/produtos/mochila-kpopper2.png" class="card-img-top" alt="mochila preto e laranja claro com pingente">
+                        <div class="card-body">
+                            <h5 class="card-title">Mochila Kpopper2</h5>
+                            <p>
+                              <span class="valor">R$198,00</span><strong>R$176,00</strong><br>
+                              <span class="card-text-parcela">6 x de R$29,33</span>
+                            </p>
+                            <button type="button" class="btn btn-sm btn-success">Comprar</button>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/produtos/mochila-casual2.png" class="card-img-top" alt="mochila casual preto e cinza">
+                        <div class="card-body">
+                            <h5 class="card-title">Mochila Casual2</h5>
+                            <p>
+                              <span class="valor">R$190,80</span><strong>R$156,00</strong><br>
+                              <span class="card-text-parcela">6 x de R$26,00</span>
+                            </p>
+                            <button type="button" class="btn btn-sm btn-success">Comprar</button>   
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="img/produtos/mochila-otaku.png" class="card-img-top" alt="mochila bege, preto e cinza com figura de anime">
+                        <div class="card-body">
+                            <h5 class="card-title">Mochila Otaku</h5>
+                            <p>
+                              <span class="valor">R$193,41</span><strong>R$154,00</strong><br>
+                              <span class="card-text-parcela">6 x de R$25,66</span>
+                            </p>
+                            <button type="button" class="btn btn-sm btn-success">Comprar</button>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="container mt-5">
+            <div id="quemSomos" class="container mb-2 row pt-3">
+    
+                <div class="ms-5 text-start col my-auto">
+                  <p class="quemSomos-title fs-2 ms-1 mb-3">Um pouco sobre quem somos...</p>
+                  <p class="quemSomos-text ps-3">
+                    Lorem ipsum dolor sit amet, adipisci elit, sed eiusmod atm tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrum exercitationem ullam corporis laboriosam, nisi ut aliquid ex ea commodi. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                  </p>
+                  <a class="quemSomos-link ms-3 text-decoration-none link-opacity-100-hover" href="#">Ler mais...</a>
+                </div>
+                
+                
+                <div class="col text-center">
+                    <img src="img/img-quemSomos.png">
+                </div>
+    
+            </div>
+            <hr>
+            <div id="nossaEquipe" class="container mt-5">
+                <div class="intro-equipe text-center mb-5">
+                    <h4 class="fs-2">Conheça Nosso Time</h4>
+                    <span>Sit obcaecati repellendus qui neque tempora qui aspernatur autem eos facilis quod.</span>
+                </div>     
+    
+                <div id="membros-container" class="d-flex row row-cols-1 row-cols-md-3 g-3 containertext-center text-center">   
+                    <div class="membro-equipe1">
+                        <div>
+                            <img class="rounded-circle border border-4 border-dark" src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" height="160em" width="160em" alt="foto-Yane Reis">
+                        </div>
+                        <p class="mt-3"><strong>Yane Reis</strong><br>líder criativo</p>
+                        <div>
+                            <i class="fa-brands fa-facebook fa-xl" style="color: #2b192e;"></i>
+                            <i class="fa-brands fa-twitter fa-xl mx-2" style="color: #2b192e;"></i>
+                            <i class="fa-brands fa-instagram fa-xl" style="color: #2b192e;"></i>
+                        </div>
+                    </div>
+                    <div class="membro-equipe2">
+                        <div>
+                            <img class="rounded-circle border border-4 border-dark" src="https://images.pexels.com/photos/1520760/pexels-photo-1520760.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" height="160em" width="160em" alt="foto-Raquel Morais">
+                        </div>
+                        <p class="mt-3"><strong>Raquel Morais</strong><br>gerente de vendas</p>
+                        <div>
+                            <i class="fa-brands fa-facebook fa-xl" style="color: #2b192e;"></i>
+                            <i class="fa-brands fa-twitter fa-xl mx-2" style="color: #2b192e;"></i>
+                            <i class="fa-brands fa-instagram fa-xl" style="color: #2b192e;"></i>
+                        </div>
+    
+                    </div>
+                    <div class="membro-equipe3">
+                        <div>
+                            <img class="rounded-circle border border-4 border-dark" src="https://images.pexels.com/photos/6497114/pexels-photo-6497114.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" height="160em" width="160em" alt="foto-Luana Motta">
+                        </div>
+                        <p class="mt-3"><strong>Luana Motta</strong><br>desenvolvedora</p>
+                        <div>
+                            <i class="fa-brands fa-facebook fa-xl" style="color: #2b192e;"></i>
+                            <i class="fa-brands fa-twitter fa-xl mx-2" style="color: #2b192e;"></i>
+                            <i class="fa-brands fa-instagram fa-xl" style="color: #2b192e;"></i>
+                        </div>
+                    </div>  
+                </div>
+    
+                <div class="bg-equipe container-fluid"></div>
+              </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="px-3 mt-4 text-center" id="contato">
+        <div id="container-contato">
+            <div class="col-md-12 pt-5">
+                <h3 class="titulo-pincipal">Entre em contato conosco</h3>
+                <div class="divisoria-titulo-principal mx-auto"></div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center pt-5">
+                <div class="content-contato col-md-4">
+                    <i class="fas fa-phone"></i>
+                    <p>
+                        <span class="titulo-contatos">Liguem para:</span> (00) 0000-0000
+                        <br>Horários: 8:00 às 18:00
+                    </p>
+                </div>
+                <div class="content-contato col-md-4">
+                    <i class="fas fa-envelope"></i>
+                    <p><span class="titulo-contatos">Envie um e-mail:</span> contato@popbags.com.br
+                    </p>
+                </div>
+                <div class="content-contato col-md-4">
+                    <i class="fas fa-location-dot"></i>
+                    <p><span class="titulo-contatos">Venha nos visitar:</span> Rua Lorem Ipsum - 185 <br>São Paulo - SP
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="d-flex flex-wrap">
+            <p class="me-auto">© 2023 PopBags - by Rebeca Mota
+            </p>
+            
+            <div>
+                <i class="fa-brands fa-twitter fa-lg m-1"></i>
+                <i class="fa-brands fa-instagram fa-lg m-1"></i>
+                <i class="fa-brands fa-facebook fa-lg m-1"></i>
+            </div>
+        </div>
+    </footer>
+    
+
+    <script src="https://kit.fontawesome.com/0c12d45973.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

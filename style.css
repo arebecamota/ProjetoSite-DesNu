@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+header{
+    background-color: #f5e8da;
+    border-bottom: #2b192e 1.5px solid;
+}
+
+#info{
+    background-color: #2b192e;
+    color: white;
+    padding: .4em;
+    font-size: .7em;
+}
+
+.navbar-brand{
+    color: #2b192e;
+    font-weight: 600;
+    font-style: oblique;
+}
+
+#itensCenter-nav li a{
+    color: #2b192e;
+}
+
+#title-maisVendidos h3{
+    text-shadow: #f3cdf2 2px 2px 0;
+    border-bottom: #f3cdf2 5px double;
+}
+
+.card-title{
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.valor{
+    font-size: .8em;
+    text-decoration: line-through;
+}
+
+.card-text-parcela{
+    font-size: .8em;
+}
+
+
+.quemSomos-text{
+    text-align: justify;
+    border-left: #2b192e .15em solid;
+}
+
+.quemSomos-link, .quemSomos-title, .intro-equipe h4{
+    color: #2b192e;
+}
+
+.bg-equipe{
+    z-index: -1;
+    position: relative;
+    top: -11em;
+    background-color: #2b192e;
+    height: 5em;
+}
+
+footer{
+    color: #fff;
+    background: #2b192e;
+}
+
+.divisoria-titulo-principal{
+    width: 160px;
+    height: 2px;
+    background: #fff;
+}
+
+
+@media (max-width:780px){
+    .bg-equipe{
+        display: none;
+    }
+    #info{
+        font-size: .5em;
+    }
+    .valor{
+        display: inline-block;          
+    }
+}
