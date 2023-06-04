@@ -27,6 +27,14 @@ header{
     color: #2b192e;
 }
 
+.icon-cart{
+    display: flex;
+    gap: 4px;
+    text-decoration: none;
+    color: #2b192e;
+    align-items: center;
+}
+
 #title-maisVendidos h3{
     text-shadow: #f3cdf2 2px 2px 0;
     border-bottom: #f3cdf2 5px double;
