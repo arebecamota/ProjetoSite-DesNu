@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/favion.png" type="image/x-icon">
+    <title>Carrinho de Compra</title>
+</head>
+<body id="container-card">
+    <header>
+        <div class="text-center container-fluid" id="info">
+            <span>Frete grátis para todo o Brasil | Com 8% off à vista | 3x sem juros no PIX</span>
+        </div>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <h2 class="navbar-brand ms-4 my-auto" href="index.html"> POP BAGS
+                </h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul id="itensCenter-nav" class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html#produtos">Populares</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Coleções</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html#produtos">Antifurto</a></li>
+                                <li><a class="dropdown-item" href="index.html#produtos">Casual</a></li>
+                                <li><a class="dropdown-item" href="index.html#produtos">Kawaii</a></li>
+                                <li><a class="dropdown-item" href="index.html#produtos">Kpopper</a></li>
+                                <li><a class="dropdown-item" href="index.html#produtos">Otaku</a></li>
+                                <li><a class="dropdown-item" href="index.html#produtos">Vintage</a></li>
+                                <li><a class="dropdown-item" href="index.html#produtos">Outros</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Categorias</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="index.html#produtos">Femininas</a></li>
+                                <li><a class="dropdown-item" href="index.html#produtos">Masculinas</a></li>
+                                <li><a class="dropdown-item" href="index.html#produtos">Unissex</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#contato">Contato</a>
+                        </li>
+                    </ul>        
+                    <form class="d-flex" role="search">
+                    <input class="form-control" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass" style="color: #2b192e;"></i></button>
+                    </form>
+                    <a class="icon-cart d-flex me-4" href="#"><i class="fa-solid fa-cart-plus" style="color: #2b192e;"></i><span>Carrinho</span></a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="h-100">
+        <div class="container h-100 py-5">
+            <div class="row d-flex justify-content-center align-items-center h-100">
+                <div class="col-10" id="carrinho">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h3 class="fw-normal mb-0 text-black">Shopping Cart</h3>
+                        <p class="mt-4 ">POP BAGS</p>
+                    </div>
+        
+                    <div id="produto0" class="content-card card rounded-3 mb-4">
+                        <div class="card-body p-4">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <img
+                                        src="img/produtos/mochila-casual.png"
+                                        class="img-fluid rounded-3" alt="mochila casual">
+                                </div>
+                                <div class="col-md-3 col-lg-3 col-xl-3">
+                                    <p class="lead fw-normal mb-2">Mochila Casual</p>
+                                    <p><span class="text-muted">Cor: </span>Vermelha</p>
+                                </div>
+                                <div class="col-md-3 col-lg-3 col-xl-2">
+                                    <span class="btn btn-link px-2">
+                                        <i class="fas fa-minus-square text-secondary" onclick="removerItem(0)"></i>
+                                    </span>
+                                    <span class="text-center" id="quantidade0">0</span>
+                                    <span class="btn btn-link px-2">
+                                        <i class="fas fa-plus-square text-secondary" onclick="adicionarItem(0)"></i>
+                                    </span>
+                                </div>
+                                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                                    <h5 class="mb-0">R$<span id="total0">0.00</span></h5>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                                    <a href="#!" class="text-dark"><i class="fas fa-trash fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div id="produto1" class="card rounded-3 mb-4">
+                        <div class="card-body p-4">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <img src="img/produtos/mochila-kawaii.png" class="img-fluid rounded-3" alt="mochila fofa com chaveiros de ursinho">
+                                </div>
+                                <div class="col-md-3 col-lg-3 col-xl-3">
+                                    <p class="lead fw-normal mb-2">Mochila Kawaii</p>
+                                    <p><span class="text-muted">Cor: </span>Preto</p>
+                                </div>
+                                <div class="col-md-3 col-lg-3 col-xl-2">
+                                    <span class="btn btn-link px-2">
+                                        <i class="fas fa-minus-square text-secondary" onclick="removerItem(1)"></i>
+                                    </span>
+                                    <span class="text-center" id="quantidade1">0</span>
+                                    <span class="btn btn-link px-2">
+                                        <i class="fas fa-plus-square text-secondary" onclick="adicionarItem(1)"></i>
+                                    </span>
+                                </div>
+                                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                                    <h5 class="mb-0">R$<span id="total1">0.00</span></h5>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                                    <a href="#!" class="text-dark"><i class="fas fa-trash fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div id="produto2" class="card rounded-3 mb-4">
+                        <div class="card-body p-4">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <img src="img/produtos/mochila-otaku.png" class="img-fluid rounded-3" alt="Mochila Otaku">
+                                </div>
+                                <div class="col-md-3 col-lg-3 col-xl-3">
+                                    <p class="lead fw-normal mb-2">Mochila Otaku</p>
+                                    <p><span class="text-muted">Cor: </span>Cinza, Branco e Preto</p>
+                                </div>
+                                <div class="col-md-3 col-lg-3 col-xl-2">
+                                    <span class="btn btn-link px-2">
+                                        <i class="fas fa-minus-square text-secondary" onclick="removerItem(2)"></i>
+                                    </span>
+                                    <span class="text-center" id="quantidade2">0</span>
+                                    <span class="btn btn-link px-2">
+                                        <i class="fas fa-plus-square text-secondary" onclick="adicionarItem(2)"></i>
+                                    </span>
+                                </div>
+                                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                                    <h5 class="mb-0">R$<span id="total2">0.00</span></h5>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                                    <a href="#!" class="text-dark"><i class="fas fa-trash fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div id="produto3" class="card rounded-3 mb-4">
+                        <div class="card-body p-4">
+                            <div class="row d-flex justify-content-between align-items-center">
+                                <div class="col-md-2 col-lg-2 col-xl-2">
+                                    <img src="img/produtos/mochila-antiFurto.png"class="img-fluid rounded-3" alt="Mochila Antifurto">
+                                </div>
+                                <div class="col-md-3 col-lg-3 col-xl-3">
+                                    <p class="lead fw-normal mb-2">Mochila Antifurto</p>
+                                    <p><span class="text-muted">Cor: </span>Azul</p>
+                                </div>
+                                <div class="col-md-3 col-lg-3 col-xl-2">
+                                    <span class="btn btn-link px-2">
+                                        <i class="fas fa-minus-square text-secondary" onclick="removerItem(3)"></i>
+                                    </span>
+                                    <span class="text-center" id="quantidade3">0</span>
+                                    <span class="btn btn-link px-2">
+                                        <i class="fas fa-plus-square text-secondary" onclick="adicionarItem(3)"></i>
+                                    </span>
+                                </div>
+                                <div class="col-md-3 col-lg-2 col-xl-2 offset-lg-1">
+                                    <h5 class="mb-0">R$<span id="total3">0.00</span></h5>
+                                </div>
+                                <div class="col-md-1 col-lg-1 col-xl-1 text-end">
+                                    <a href="#!" class="text-dark"><i class="fas fa-trash fa-lg"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                    <div class="card mb-4">
+                        <div class="card-body p-4 d-flex flex-row align-items-center justify-content-between">
+                            <div>
+                                <button type="button" class="btn btn-sm bg-light border border-dark">Voltar</button>
+                            </div>
+                            
+                            <div class="px-md-0 px-1">
+                                <b class="p1-md-4">SUBTOTAL R$<span class="p1-md-4" id="valorTotalCompra"></span></b>
+                            </div>
+                            <div>
+                               <button type="button" class="btn btn-sm bg-light border border-dark">Continuar</button> 
+                            </div>    
+                        </div>
+                    </div>
+                    <div class="card p-2">
+                        <button id="btn-pagamento" type="button" class="btn btn-block btn-lg">Prosseguir para pagamento</button>     
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="px-3 mt-4 text-center" id="contato">
+        <div id="container-contato">
+            <div class="col-md-12 pt-5">
+                <h3 class="titulo-pincipal">Entre em contato conosco</h3>
+                <div class="divisoria-titulo-principal mx-auto"></div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center pt-5">
+                <div class="content-contato col-md-4">
+                    <i class="fas fa-phone"></i>
+                    <p>
+                        <span class="titulo-contatos">Liguem para:</span> (00) 0000-0000
+                        <br>Horários: 8:00 às 18:00
+                    </p>
+                </div>
+                <div class="content-contato col-md-4">
+                    <i class="fas fa-envelope"></i>
+                    <p><span class="titulo-contatos">Envie um e-mail:</span> contato@popbags.com.br
+                    </p>
+                </div>
+                <div class="content-contato col-md-4">
+                    <i class="fas fa-location-dot"></i>
+                    <p><span class="titulo-contatos">Venha nos visitar:</span> Rua Lorem Ipsum - 185 <br>São Paulo - SP </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="d-flex flex-wrap">
+            <p class="me-auto">© 2023 PopBags - by Rebeca Mota</p>  
+            <div>
+                <i class="fa-brands fa-twitter fa-lg m-1"></i>
+                <i class="fa-brands fa-instagram fa-lg m-1"></i>
+                <i class="fa-brands fa-facebook fa-lg m-1"></i>
+            </div>
+        </div>
+    </footer>
+
+    <script src="cart.js"></script>
+    <script src="https://kit.fontawesome.com/0c12d45973.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -7,10 +7,8 @@ O curso é oferecido pelo Instituto Nu em parceria com a Descomplica, visando a 
 ## 🚀 Disciplinas Técnicas:
 - Introdução ao desenvolvimento Web:
 ‍os primeiros passos pra se tornar desenvolvedor.
-- Front-End: estudo e desenvolvimento de 3 projetos práticos em:
-  - [x] Design Thinking, UX e Metodologias Ágeis;
-  - [x] Html, CSS, Bootstrap;
-  - [ ] Javascript e React.
+- Front-End: estudo e desenvolvimento de mini-projeto prático:
+  - [x] Html, CSS, Bootstrap e JavaScript.
 
 ## 👩 Disciplinas Comportamentais:
 - Projeto de Vida: visualização e criação do próprio futuro profissional. 
@@ -32,12 +30,11 @@ Como proposto ao alunos para este projeto, desenvolvi um layout de uma loja virt
 - HTML;
 - CSS;
 - Bootstrap;
-- Javascript;
-- React.
+- JavaScript;
 
 ## Etapas:
 - [x] Primeira etapa (desenvolver uma página com html, css e bootstrap)
-- [ ] Segunda etapa (desenvolver uma segunda página de checkout utilizando JS e React para associar à primeira etapa)
+- [x] Segunda etapa (desenvolver uma segunda página de carrinho de compra utilizando JavaScript)
 
 ---
 Desenvolvido 💜 por Rebeca Mota

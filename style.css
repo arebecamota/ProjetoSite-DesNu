@@ -83,6 +83,17 @@ footer{
     background: #fff;
 }
 
+/* Estilizacão da página de carrinho de compra */
+
+#container-card{
+    background-color: #f5e8da;
+}
+
+#btn-pagamento{
+    background: #2b192e;
+    color: white;
+}
+
 
 @media (max-width:780px){
     .bg-equipe{
