@@ -83,6 +83,30 @@ footer{
     background: #fff;
 }
 
+/* Estilização da Página do Carrinho de Comprar */
+
+#body-cart{
+    background: #f5e8da;
+}
+
+.fa-minus-square{
+    cursor: pointer;
+}
+
+.fa-plus-square{
+    cursor: pointer;
+}
+
+.content-cart{
+    border: 1px #2b192e solid;
+    border-radius: 5px;
+}
+
+#proceedToPay{
+    background-color: #2b192e;
+    color: white;
+}
+
 
 @media (max-width:780px){
     .bg-equipe{
